@@ -43,33 +43,33 @@ Data Science Process The following data science process was employed to build th
 
 Data preprocessing and cleaning to handle missing values and irrelevant features.Feature engineering to create new variables and enhance the dataset. Exploratory Data Analysis (EDA) to gain insights and understand the relationships between different features. Model building using various regression techniques such as Linear Regression, Decision Tree, Random Forest, AdaBoost, and Gradient Boosting. Evaluation of the regression models to determine their effectiveness in predicting and improving supply chain efficiency.
 
-Data Exploration Exploring the dataset to understand the characteristics of the data is a crucial step in the project. This includes examining data statistics, visualizing key features, and identifying correlations.
+Data Exploration : Exploring the dataset to understand the characteristics of the data is a crucial step in the project. This includes examining data statistics, visualizing key features, and identifying correlations.
 
-Data Cleaning Data cleaning is essential to ensure that the dataset is free from missing values and irrelevant information. This step involves handling null values, removing unnecessary columns, and preparing the data for analysis.
+Data Cleaning : Data cleaning is essential to ensure that the dataset is free from missing values and irrelevant information. This step involves handling null values, removing unnecessary columns, and preparing the data for analysis.
 
-Feature Engineering Feature engineering involves creating new variables or transforming existing ones to enhance the dataset's predictive power. In this project, features like warehouse age, demand, supply, and demand interaction have been created to better understand the supply chain dynamics.
+Feature Engineering : Feature engineering involves creating new variables or transforming existing ones to enhance the dataset's predictive power. In this project, features like warehouse age, demand, supply, and demand interaction have been created to better understand the supply chain dynamics.
 
-Exploratory Data Analysis (EDA) The EDA process was conducted to get a better understanding of the dataset and the relationships between the different variables. EDA is a critical step in the project as it helps uncover valuable insights and relationships within the data. This includes visualizing data, identifying trends, and understanding how different factors affect the supply chain.
+Exploratory Data Analysis (EDA) : The EDA process was conducted to get a better understanding of the dataset and the relationships between the different variables. EDA is a critical step in the project as it helps uncover valuable insights and relationships within the data. This includes visualizing data, identifying trends, and understanding how different factors affect the supply chain.
 
-Data Preprocessing Data preprocessing involves preparing the data for modeling by encoding categorical variables, normalizing data, and making it ready for regression analysis.
+Data Preprocessing : Data preprocessing involves preparing the data for modeling by encoding categorical variables, normalizing data, and making it ready for regression analysis.
 
 Model Building and Evaluation Five models were built using the following machine learning algorithms:
 
-Linear Regression
+1.Linear Regression
 
-Decision Tree Regressor
+2.Decision Tree Regressor
 
-Random Forest Regressor
+3.Random Forest Regressor
 
-Bagging Regressor
+4.Bagging Regressor
 
-AdaBoost Regressor
+5.AdaBoost Regressor
 
-Gradient Boosting Regressor
+6.Gradient Boosting Regressor
 
 The models were fitted to the training data and evaluated using the testing data.
 
-Evaluation The performance of the regression models is assessed using appropriate evaluation metrics. This step helps determine which model is the most effective in optimizing the supply chain.
+Evaluation : The performance of the regression models is assessed using appropriate evaluation metrics. This step helps determine which model is the most effective in optimizing the supply chain.
 
 
 
