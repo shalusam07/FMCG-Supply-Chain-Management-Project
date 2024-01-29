@@ -17,75 +17,61 @@ optimum weight of the product to be shipped each time from the respective wareho
 3. Highlight next steps and improvements.
 4. Apply 5 to 6 machine learning algorithms and evaluate it using Test dataset.
 
-# Problem Solving Approach 
+The objective of this exercise is to build a model, using historical data that will determine an optimum weight of the product to be shipped each time from the respective warehouse.
 
-1. Exploratory Data Analysis (EDA)
-Description: Dive into the dataset to understand its structure, identify patterns, and uncover insights into the business. EDA serves as the foundation for subsequent data cleaning and feature engineering steps.
+Dataset The dataset for this problem consists of various features such as warehouse ID, manager ID, zone, regional zone, number of refill requests received by the warehouse in the last 3 months, number of transport issues for the warehouse in the last 1 year, number of competitors in the market, number of retail shops who sell noodles produced by the warehouse, whether the warehouse is owned by the company or it is on rent, number of distributors who work between warehouse and retail shops,whether the warehouse is in a flood impacted area or not, whether the warehouse has proper electric supply along with some power backup, distance from the warehouse to production hub, number of workers in the warehouse, warehouse establishment year, storage issues reported by the warehouse in the last 3 months, whether the warehouse has temperature regulating machine indicator or not,type of approval warehouse having been issued by government, number of times the warehouse faces the breakdown in the last 3 months, product weight, etc.
 
-2. Data Cleaning 
-Description: Ensure the dataset's integrity and prepare it for analysis by addressing missing values and removing unnecessary columns.
-Delete unnecessary columns: Remove features that do not contribute significantly to the analysis.
-Checking missing values: Identify and handle missing data.
-Filling missing values in the 'workers_num' column: Address missing values using the mean value of the column.
-Discard the 'wh_est_year' column: Remove a column with a high percentage of null values.
-Filling missing values in the 'approved_wh_govt_certificate' column: Fill missing values with the most recent non-null value.
+Data Science Process The following data science process was employed to build the model:
 
-3. Data Visualization 📊
-Description: Create visual representations of the data to gain insights and understand key relationships.
-Warehouse count by WH_capacity_size: Visualize the distribution of warehouses based on capacity size.
-WH_capacity_size by Location_type: Explore how capacity size varies across different location types.
-WH_capacity_size by zone: Analyze the relationship between capacity size and zones.
-Warehouse count by WH_regional_zone: Understand the distribution of warehouses across regional zones.
+1.Project Overview
 
-4. Feature Engineering
-Description: Enhance the dataset by creating new features or modifying existing ones to improve model performance.
-Product weights by zone: Derive new features related to product weights based on regional zones.
-Heatmap for correlation matrix: Visualize relationships between different features using a heatmap.
-Correlation with the target variable: Examine the correlation between various features and the target variable.
+2.Data Exploration
 
-5. Data Preprocessing 🌐🔍
-Description: Prepare the data for modeling by encoding categorical variables and scaling numerical features.
-Encode 'Location_type' column: Transform categorical location types into numerical representations.
-Encode 'WH_capacity_size' column: Convert warehouse capacity sizes into numerical labels.
-Encode 'approved_wh_govt_certificate' column: Encode approval status for government certificates.
-Encode 'zone' column: Numerically represent different zones.
-Encode 'WH_regional_zone' column: Encode regional zones.
-Encode 'wh_owner_type' column: Convert warehouse owner types into numerical labels.
+3.Data Cleaning
 
-6. Model Building 🛠️📈
-Implementing various machine learning models to predict the optimum product weight:
+4.Feature Engineering
 
-Linear Regression: A simple linear model for predicting weights based on historical data.
-Decision Tree: A tree-based model for capturing complex relationships in the data.
-Random Forest: An ensemble model combining multiple decision trees for improved accuracy.
-SVR (Support Vector Regression): A model for capturing non-linear relationships in the data.
-XGBoost: An efficient gradient boosting model for regression tasks.
-Neural Network: A deep learning model for complex pattern recognition and prediction.
-Model Comparison:
-Model	MSE
-Linear Regression	2.679269e-22
-Decision Tree	1.994284e+00
-Random Forest	2.151994e+00
-SVR	1.285540e+08
-XGBoost	2.931428e+04
-Neural Network	4.194941e+02
+5.Exploratory Data Analysis
 
-Best Model:
-Linear Regression has the lowest Mean Squared Error: 2.6792688615790993e-22
+6.Data Preprocessing
 
-7. Next Steps 
-Description: Continuous improvement and refinement of the model can be achieved through:
-Gathering more data: Expanding the dataset with additional relevant information.
-Fine-tuning hyperparameters: Adjusting model parameters for optimal performance.
-Cross-validation: Ensuring the model's robustness by evaluating it on different subsets of the data.
-Model interpretation: Understanding the model's decisions and adjusting accordingly.
+7.Model Building & Evaluation
 
-8. Improvements 
-Description: Considerations for enhancing the project further:
-Real-time data integration: Implementing a mechanism to incorporate live data for up-to-date predictions.
-Deployment: Transitioning the model from development to production for practical usage.
-User interface: Developing a user-friendly interface for easy interaction with the supply chain predictions.
-Feedback loop: Establishing a feedback mechanism to continuously improve the model based on real-world outcomes.
+8.Evaluation
+
+9.Conclusion This project focuses on improving supply chain management using supervised regression analysis. It involves the following key steps:
+
+Data preprocessing and cleaning to handle missing values and irrelevant features.Feature engineering to create new variables and enhance the dataset. Exploratory Data Analysis (EDA) to gain insights and understand the relationships between different features. Model building using various regression techniques such as Linear Regression, Decision Tree, Random Forest, AdaBoost, and Gradient Boosting. Evaluation of the regression models to determine their effectiveness in predicting and improving supply chain efficiency.
+
+Data Exploration Exploring the dataset to understand the characteristics of the data is a crucial step in the project. This includes examining data statistics, visualizing key features, and identifying correlations.
+
+Data Cleaning Data cleaning is essential to ensure that the dataset is free from missing values and irrelevant information. This step involves handling null values, removing unnecessary columns, and preparing the data for analysis.
+
+Feature Engineering Feature engineering involves creating new variables or transforming existing ones to enhance the dataset's predictive power. In this project, features like warehouse age, demand, supply, and demand interaction have been created to better understand the supply chain dynamics.
+
+Exploratory Data Analysis (EDA) The EDA process was conducted to get a better understanding of the dataset and the relationships between the different variables. EDA is a critical step in the project as it helps uncover valuable insights and relationships within the data. This includes visualizing data, identifying trends, and understanding how different factors affect the supply chain.
+
+Data Preprocessing Data preprocessing involves preparing the data for modeling by encoding categorical variables, normalizing data, and making it ready for regression analysis.
+
+Model Building and Evaluation Five models were built using the following machine learning algorithms:
+
+Linear Regression
+
+Decision Tree Regressor
+
+Random Forest Regressor
+
+Bagging Regressor
+
+AdaBoost Regressor
+
+Gradient Boosting Regressor
+
+The models were fitted to the training data and evaluated using the testing data.
+
+Evaluation The performance of the regression models is assessed using appropriate evaluation metrics. This step helps determine which model is the most effective in optimizing the supply chain.
+
+
 
 # Conclusion 
 This project aims to enhance supply chain management through supervised regression analysis. By leveraging the power of data preprocessing, feature engineering, and regression modeling, we can uncover valuable insights and improve the efficiency of the supply chain. The project's findings and models will have practical applications in real-world supply chain optimization.
